@@ -1,0 +1,215 @@
+@import "_reset.css";
+/*  Color palette
+    -----------------------
+    color       HEX code  RGB code
+    -------------------------------------
+    red:      	#960001	  rgb(150,0,1)
+    yellow:     #e2e55f	  rgb(226,229,95)
+    green:      #96c25f	  rgb(150,194,95)
+    blue:       #5582c6	  rgb(85,130,198)
+    purple: 	  #79519f	  rgb(121,81,159) 
+
+    fonts
+    -----------------------
+    headings:   Cabin
+    body:       Roboto
+
+    font-sizes:
+    -----------------------
+    h1:   70px
+    h2:   36px
+    h3    24px
+    body: 17px (all other text)
+
+    breakpoints
+    -----------------------
+    desktop: 1200px
+    
+    max-width of the content is 1400px
+*/
+
+/* Add all of your styles here */
+
+body {
+  background-color: #5582c6;
+  font-size: 17px;
+  color: #eeeeff;
+  font-family: "Roboto";
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+  color: #960001;
+  font-family: "Cabin";
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #e2e55f;
+  text-decoration: none;
+}
+
+hr {
+  border: solid 1px #96c25f;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+a img:hover {
+  box-shadow: 0 0 10px #960001;
+}
+
+#wallpaper {
+  width: 100vw;
+  height: 27%;
+  max-height: 31vw;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.content-wrapper {
+  margin-left: 10.7%;
+  margin-right: 10.7%;
+}
+
+#poster-icon {
+  top: 18.3vw;
+  width: 16.8%;
+  position: absolute;
+  display: block;
+  box-shadow: 0 0 3px #960001;
+}
+
+#page-heading {
+  background-color: #eeeeff;
+  margin-top: 1.5%;
+  margin-left: 23.3%;
+  width: 380px;
+  padding: 0px 10px;
+}
+
+#synopsis {
+  margin-top: 7.5vw;
+}
+
+#synopsis p {
+  padding-top: 27px;
+}
+
+#characters {
+  margin-top: 27px;
+}
+
+br {
+  line-height: 12;
+}
+
+.voice-actor {
+  margin-bottom: 10px;
+}
+
+.voice-actor a {
+  font-size: 18.5px;
+  font-weight: 900;
+}
+
+.character-image {
+  width: 170px;
+  margin-right: 18px;
+  float: left;
+  box-shadow: 0 0 3px #960001;
+}
+
+#flexbox {
+  margin-top: 37px;
+}
+
+#flexbox-container-1,
+#flexbox-container-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.flex-items {
+  width: 55%;
+}
+
+#woody-quote {
+  background-color: #e2e55f;
+  color: #960001;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 25px 0px 25px 12%;
+  border-top: 2px solid green;
+  font-weight: 200;
+}
+
+#first-word {
+  font-size: 17px;
+  text-shadow: 0.85px 0 0 currentColor;
+  margin-right: 0.5%;
+}
+
+#comment-spacing {
+  margin-bottom: 300px;
+}
+
+form {
+  margin-top: 38px;
+}
+
+#input-text {
+  width: 393px;
+  height: 37px;
+  border: 1.7px #888 solid;
+}
+
+#input-btn {
+  background-color: #79519f;
+  margin-top: 20px;
+  padding: 6px 160px;
+  border: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  font-family: "Cabin";
+}
+
+#comment-box {
+  height: 70px;
+  padding-top: 30px;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #page-heading {
+    width: 40vw;
+  }
+}
